@@ -1,0 +1,161 @@
+ 2023-12-09 11:47:47.453 +00:00 [INF] Application Is Starting
+ 2023-12-09 11:47:48.961 +00:00 [INF] User profile is available. Using '/Users/boakye/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+ 2023-12-09 11:47:49.519 +00:00 [INF] Now listening on: https://localhost:5001
+ 2023-12-09 11:47:49.519 +00:00 [INF] Now listening on: http://localhost:5000
+ 2023-12-09 11:47:49.519 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+ 2023-12-09 11:47:49.519 +00:00 [INF] Hosting environment: Development
+ 2023-12-09 11:47:49.519 +00:00 [INF] Content root path: /Users/boakye/Projects/AFS/AFS
+ 2023-12-09 11:47:50.746 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+ 2023-12-09 11:47:50.810 +00:00 [INF] Executing endpoint 'AFS.Controllers.HomeController.IndexAsync (AFS)'
+ 2023-12-09 11:47:50.878 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IndexAsync() on controller AFS.Controllers.HomeController (AFS).
+ 2023-12-09 11:47:51.833 +00:00 [INF] Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+ 2023-12-09 11:47:52.267 +00:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."content_id", "c"."text", "c"."translated", "c"."translation"
+FROM "Contents" AS "c"
+ 2023-12-09 11:47:52.301 +00:00 [INF] Executing ViewResult, running view Index.
+ 2023-12-09 11:47:52.704 +00:00 [INF] Executed ViewResult - view Index executed in 404.8124ms.
+ 2023-12-09 11:47:52.706 +00:00 [INF] Executed action AFS.Controllers.HomeController.IndexAsync (AFS) in 1827.1782ms
+ 2023-12-09 11:47:52.706 +00:00 [INF] Executed endpoint 'AFS.Controllers.HomeController.IndexAsync (AFS)'
+ 2023-12-09 11:47:52.714 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 1972.5327ms
+ 2023-12-09 11:47:52.757 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css - -
+ 2023-12-09 11:47:52.832 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+ 2023-12-09 11:47:52.957 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+ 2023-12-09 11:47:53.026 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+ 2023-12-09 11:47:53.123 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.min.js - -
+ 2023-12-09 11:47:53.123 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+ 2023-12-09 11:47:53.127 +00:00 [INF] The file /css/site.css was not modified
+ 2023-12-09 11:47:53.127 +00:00 [INF] The file /js/site.js was not modified
+ 2023-12-09 11:47:53.127 +00:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+ 2023-12-09 11:47:53.127 +00:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+ 2023-12-09 11:47:53.127 +00:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+ 2023-12-09 11:47:53.127 +00:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+ 2023-12-09 11:47:53.128 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 196.6914ms
+ 2023-12-09 11:47:53.128 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/css/site.css - - - 304 - text/css 370.8350ms
+ 2023-12-09 11:47:53.128 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 101.9268ms
+ 2023-12-09 11:47:53.128 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 345.1382ms
+ 2023-12-09 11:47:53.128 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 304 - application/javascript 5.1418ms
+ 2023-12-09 11:47:53.128 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.min.js - - - 304 - application/javascript 5.1737ms
+ 2023-12-09 11:47:53.156 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+ 2023-12-09 11:47:53.157 +00:00 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+ 2023-12-09 11:47:53.157 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 304 - application/javascript 1.1971ms
+ 2023-12-09 11:47:53.265 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/images/sort_both.png - -
+ 2023-12-09 11:47:53.267 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/images/sort_both.png - - - 404 0 - 2.6185ms
+ 2023-12-09 11:47:53.288 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/images/sort_asc.png - -
+ 2023-12-09 11:47:53.291 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/images/sort_asc.png - - - 404 0 - 2.7389ms
+ 2023-12-09 11:48:02.067 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Home/TranslateText application/json 22
+ 2023-12-09 11:48:02.068 +00:00 [INF] Executing endpoint 'AFS.Controllers.HomeController.TranslateText (AFS)'
+ 2023-12-09 11:48:02.082 +00:00 [INF] Route matched with {action = "TranslateText", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TranslateText(AFS.Models.UserText) on controller AFS.Controllers.HomeController (AFS).
+ 2023-12-09 11:48:02.111 +00:00 [INF] Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+ 2023-12-09 11:48:02.310 +00:00 [INF] [API CALL] 2023-12-09 11:48:02 - https://api.funtranslations.com/translate/leetspeak.json
+Request Data: TestLogging
+
+ 2023-12-09 11:48:05.855 +00:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 13), @p2='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contents" ("text", "translated", "translation")
+VALUES (@p0, @p1, @p2);
+SELECT "content_id"
+FROM "Contents"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+ 2023-12-09 11:48:05.895 +00:00 [INF] [API RESPONSE] 2023-12-09 11:48:05 - Status Code: OK
+Response Content: {
+    "success": {
+        "total": 1
+    },
+    "contents": {
+        "translated": "TEztL()66!gnG",
+        "text": "TestLogging",
+        "translation": "leetspeak"
+    }
+}
+
+ 2023-12-09 11:48:05.903 +00:00 [INF] Executing JsonResult, writing value of type 'AFS.Models.Response'.
+ 2023-12-09 11:48:05.922 +00:00 [INF] Executed action AFS.Controllers.HomeController.TranslateText (AFS) in 3840.5542ms
+ 2023-12-09 11:48:05.923 +00:00 [INF] Executed endpoint 'AFS.Controllers.HomeController.TranslateText (AFS)'
+ 2023-12-09 11:48:05.925 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/Home/TranslateText application/json 22 - 200 - application/json;+charset=utf-8 3857.7358ms
+ 2023-12-09 11:48:11.839 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+ 2023-12-09 11:48:11.839 +00:00 [INF] Executing endpoint 'AFS.Controllers.HomeController.IndexAsync (AFS)'
+ 2023-12-09 11:48:11.839 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IndexAsync() on controller AFS.Controllers.HomeController (AFS).
+ 2023-12-09 11:48:11.849 +00:00 [INF] Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+ 2023-12-09 11:48:11.852 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."content_id", "c"."text", "c"."translated", "c"."translation"
+FROM "Contents" AS "c"
+ 2023-12-09 11:48:11.853 +00:00 [INF] Executing ViewResult, running view Index.
+ 2023-12-09 11:48:11.856 +00:00 [INF] Executed ViewResult - view Index executed in 3.2167ms.
+ 2023-12-09 11:48:11.856 +00:00 [INF] Executed action AFS.Controllers.HomeController.IndexAsync (AFS) in 16.5376ms
+ 2023-12-09 11:48:11.856 +00:00 [INF] Executed endpoint 'AFS.Controllers.HomeController.IndexAsync (AFS)'
+ 2023-12-09 11:48:11.856 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 17.1654ms
+ 2023-12-09 11:48:11.909 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/images/sort_both.png - -
+ 2023-12-09 11:48:11.909 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/images/sort_both.png - - - 404 0 - 0.2836ms
+ 2023-12-09 11:48:11.980 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/images/sort_asc.png - -
+ 2023-12-09 11:48:11.980 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/images/sort_asc.png - - - 404 0 - 0.2803ms
+ 2023-12-09 11:48:11.990 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico - -
+ 2023-12-09 11:48:11.990 +00:00 [INF] The file /favicon.ico was not modified
+ 2023-12-09 11:48:11.990 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/favicon.ico - - - 304 - image/x-icon 0.3193ms
+ 2023-12-09 11:59:45.860 +00:00 [INF] Application Is Starting
+ 2023-12-09 11:59:47.351 +00:00 [INF] User profile is available. Using '/Users/boakye/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+ 2023-12-09 11:59:47.939 +00:00 [INF] Now listening on: https://localhost:5001
+ 2023-12-09 11:59:47.939 +00:00 [INF] Now listening on: http://localhost:5000
+ 2023-12-09 11:59:47.940 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+ 2023-12-09 11:59:47.940 +00:00 [INF] Hosting environment: Development
+ 2023-12-09 11:59:47.940 +00:00 [INF] Content root path: /Users/boakye/Projects/AFS/AFS
+ 2023-12-09 11:59:49.131 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+ 2023-12-09 11:59:49.200 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+ 2023-12-09 11:59:49.220 +00:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+ 2023-12-09 11:59:49.226 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 302 0 - 98.3231ms
+ 2023-12-09 11:59:49.240 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/Login?ReturnUrl=%2F - -
+ 2023-12-09 11:59:49.291 +00:00 [INF] Executing endpoint '/Account/Login'
+ 2023-12-09 11:59:49.373 +00:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+ 2023-12-09 11:59:49.570 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+ 2023-12-09 11:59:49.583 +00:00 [INF] AuthenticationScheme: Identity.External signed out.
+ 2023-12-09 11:59:49.584 +00:00 [INF] Executed handler method OnGetAsync, returned result .
+ 2023-12-09 11:59:49.588 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+ 2023-12-09 11:59:49.588 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+ 2023-12-09 11:59:49.982 +00:00 [INF] Executed page /Account/Login in 603.7514ms
+ 2023-12-09 11:59:49.983 +00:00 [INF] Executed endpoint '/Account/Login'
+ 2023-12-09 11:59:49.986 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/Identity/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 745.8090ms
+ 2023-12-09 11:59:49.996 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+ 2023-12-09 11:59:49.996 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+ 2023-12-09 11:59:50.015 +00:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: '/Users/boakye/.nuget/packages/microsoft.aspnetcore.identity.ui/5.0.17/staticwebassets/V4/lib/jquery-validation/dist/jquery.validate.js'
+ 2023-12-09 11:59:50.015 +00:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: '/Users/boakye/.nuget/packages/microsoft.aspnetcore.identity.ui/5.0.17/staticwebassets/V4/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'
+ 2023-12-09 11:59:50.016 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 application/javascript 19.8776ms
+ 2023-12-09 11:59:50.016 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 application/javascript 19.9056ms
+ 2023-12-09 12:00:03.538 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Identity/Account/Login?ReturnUrl=%2F application/x-www-form-urlencoded 267
+ 2023-12-09 12:00:03.547 +00:00 [INF] Executing endpoint '/Account/Login'
+ 2023-12-09 12:00:03.547 +00:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+ 2023-12-09 12:00:03.578 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnPostAsync - ModelState is "Valid"
+ 2023-12-09 12:00:04.331 +00:00 [INF] Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+ 2023-12-09 12:00:04.844 +00:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedUserName_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+ 2023-12-09 12:00:05.039 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+ 2023-12-09 12:00:05.045 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+ 2023-12-09 12:00:05.045 +00:00 [INF] User logged in.
+ 2023-12-09 12:00:05.046 +00:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+ 2023-12-09 12:00:05.046 +00:00 [INF] Executing LocalRedirectResult, redirecting to /.
+ 2023-12-09 12:00:05.047 +00:00 [INF] Executed page /Account/Login in 1499.6743ms
+ 2023-12-09 12:00:05.047 +00:00 [INF] Executed endpoint '/Account/Login'
+ 2023-12-09 12:00:05.050 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/Identity/Account/Login?ReturnUrl=%2F application/x-www-form-urlencoded 267 - 302 0 - 1511.2199ms
+ 2023-12-09 12:00:05.050 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/ - -
+ 2023-12-09 12:00:05.058 +00:00 [INF] Authorization was successful.
+ 2023-12-09 12:00:05.058 +00:00 [INF] Executing endpoint 'AFS.Controllers.HomeController.IndexAsync (AFS)'
+ 2023-12-09 12:00:05.067 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IndexAsync() on controller AFS.Controllers.HomeController (AFS).
+ 2023-12-09 12:00:05.095 +00:00 [INF] Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+ 2023-12-09 12:00:05.109 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."content_id", "c"."text", "c"."translated", "c"."translation"
+FROM "Contents" AS "c"
+ 2023-12-09 12:00:05.115 +00:00 [INF] Executing ViewResult, running view Index.
+ 2023-12-09 12:00:05.143 +00:00 [INF] Executed ViewResult - view Index executed in 30.4938ms.
+ 2023-12-09 12:00:05.143 +00:00 [INF] Executed action AFS.Controllers.HomeController.IndexAsync (AFS) in 76.6733ms
+ 2023-12-09 12:00:05.144 +00:00 [INF] Executed endpoint 'AFS.Controllers.HomeController.IndexAsync (AFS)'
+ 2023-12-09 12:00:05.144 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 93.6959ms
+ 2023-12-09 12:00:05.221 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/images/sort_both.png - -
+ 2023-12-09 12:00:05.222 +00:00 [INF] Authorization was successful.
+ 2023-12-09 12:00:05.223 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/images/sort_both.png - - - 404 0 - 1.3112ms
+ 2023-12-09 12:00:05.308 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/images/sort_asc.png - -
+ 2023-12-09 12:00:05.309 +00:00 [INF] Authorization was successful.
+ 2023-12-09 12:00:05.309 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/images/sort_asc.png - - - 404 0 - 1.5204ms

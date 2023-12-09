@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<head>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/js/dataTables.bootstrap4.min.js"></script>
+
+    <script type="text/javascript" lang="javascript">$(document).ready(function () {
+            $.noConflict();
+            $('#tblContent').DataTable();
+        });</script>
+</head>
+
+@model IEnumerable<Contents>
+
+<body>
+    <div class="container-fluid">
+        <br />
+        @if (Model != null && Model.Count() > 0)
+        {
+            <table id="tblContent" class="table table-bordered table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>User Text</th>
+                        <th>Translated Text</th>
+                        <th>Translation Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td width="35%">@item.text</td>
+                            <td width="35%">@item.translated</td>
+                            <td width="30%">@item.translation</td>
+                        </tr>
+                    }
+                </tbody>
+            </table> }
+        else
+        {
+            <p>No content yet</p>}
+
+        <br />
+
+        <hr size="12" color="red" />
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" id="txtTestToTranslate" class="form-control" placeholder="Text to Translate" />
+                <small id="vldText" style="display:none;color:red">*This field is required</small>
+            </div>
+            <div class="col-auto">
+                <button type="button" id="btnTranslate" class="btn btn-info">Translate</button>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" id="txtTranslatedText" class="form-control" placeholder="Translated Text" />
+            </div>
+
+        </div>
+
+        <hr size="12" color="red" />
+    </div>
+
+</body>
+
+
+
+
+@section Scripts
+{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+<script>
+    
+    $("body").on("click", "#btnTranslate", function () {
+
+        let text_to_translate = $("#txtTestToTranslate");
+
+        if (text_to_translate.val() === null || text_to_translate.val() === '')
+        {
+            document.getElementById("vldText").style.display = "block";
+            text_to_translate.focus();
+            return;
+        } else { document.getElementById("vldText").style.display = "none"; }
+
+        console.log(text_to_translate.val());
+
+        var _text = { text: text_to_translate.val() };
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("TranslateText")",
+                    headers: { "RequestVerificationToken": $('input:hidden[name="__RequestVerificationToken"]').val() },
+                    contentType: "application/json",
+                    dataType: "json",
+                    data: JSON.stringify(_text),
+                    success: function (response) {
+
+                        if (response.contents !== null)
+                            $("#txtTranslatedText").val(response.contents.translated);
+                        else
+                            $("#txtTranslatedText").val("");
+
+                        @*location.reload();*@
+
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                });
+
+    });
+</script>
+}
