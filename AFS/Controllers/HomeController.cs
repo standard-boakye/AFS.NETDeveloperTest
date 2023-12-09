@@ -82,7 +82,7 @@ namespace AFS.Controllers
                         funResponse = JsonConvert.DeserializeObject<Response>(responseDetails);
                         await _contentRepo.Insert(funResponse.contents);
 
-                        logEntry = $"[API RESPONSE] {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} - Status Code: {msgResponse.StatusCode}\nResponse Content: {msgResponse.Content.ReadAsStringAsync().Result}\n";
+                        logEntry = $"[API RESPONSE] {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} - Status Code: {msgResponse.StatusCode}\nResponse Content: {msgResponse.Content.ReadAsStringAsync().Result}";
                         _logger.LogInformation(logEntry);
                     }
                     else

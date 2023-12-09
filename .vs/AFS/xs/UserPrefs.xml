@@ -4,7 +4,11 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AFS" expanded="True">
-            <Node name="AFS.Web" expanded="True" selected="True" />
+            <Node name="AFS.Web" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

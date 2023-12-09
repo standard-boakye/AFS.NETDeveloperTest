@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AFS.Web.props" />
+</Project>
